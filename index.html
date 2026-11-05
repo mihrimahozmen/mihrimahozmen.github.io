@@ -214,8 +214,15 @@ footer{padding-block:48px 40px;color:var(--muted);font-size:14px;display:flex;ju
     </div>
     <div class="frontiers">
       <div class="frontier"><h3>Operations Research &amp; Decision Science</h3><p>Mathematical optimization, multi-criteria decision analysis, uncertainty, and resource allocation connect my work on logistics center location, customer-informed product design, shelter allocation, and last-mile relief distribution.</p></div>
-      <div class="frontier"><h3>Machine Learning &amp; Intelligent Systems</h3><p>Predictive analytics and AI-supported decision-making, from cost-sensitive customer churn models to research on early warning signals of task failure in multi-agent LLM systems. Manuscripts under review are identified separately in Publications.</p></div>
-      <div class="frontier"><h3>Disaster Resilience &amp; Engineering Applications</h3><p>Earthquake and flood damage assessment, disaster logistics, and response optimization, alongside physics-guided and GAN-augmented modeling of synthetic jet heat transfer. Related proposals are listed separately below as under review or in preparation.</p></div>
+      <div class="frontier"><h3>Machine Learning &amp; Intelligent Systems</h3><p>Predictive analytics and AI-supported decision-making, from cost-sensitive customer churn models to ongoing investigations into reliability and early warning signals in multi-agent AI workflows.</p></div>
+      <div class="frontier"><h3>Disaster Resilience &amp; Engineering Applications</h3><p>Earthquake and flood damage assessment, disaster logistics, and response optimization, alongside physics-guided and machine-learning approaches to complex thermal engineering systems.</p></div>
+    </div>
+    <h3 class="subhead">Current Research</h3>
+    <p class="lede">Ongoing investigations at the intersection of artificial intelligence, optimization, and engineering decision-making.</p>
+    <div class="frontiers">
+      <div class="frontier"><h3>Reliable Multi-Agent AI Systems</h3><p>Investigating early warning signals, task failure, and reliability in multi-agent LLM workflows.</p></div>
+      <div class="frontier"><h3>AI for Disaster Resilience</h3><p>Exploring data-driven approaches to disaster damage assessment, resource allocation, and response decisions.</p></div>
+      <div class="frontier"><h3>Physics-Informed Machine Learning</h3><p>Studying physics-guided modeling and machine-learning approaches for complex thermal and engineering systems.</p></div>
     </div>
     <div class="methods" aria-label="Methods">
       <span class="tag">Cost-sensitive metaheuristic learning</span><span class="tag">Imbalanced data</span><span class="tag">Multi-criteria decision analysis</span><span class="tag">Robust and stochastic decision models</span><span class="tag">Explainable AI</span><span class="tag">GIS and satellite data</span>
@@ -230,16 +237,12 @@ footer{padding-block:48px 40px;color:var(--muted);font-size:14px;display:flex;ju
     <div class="projects" id="project-list"></div>
     <h3 class="subhead">Fellowships</h3>
     <ul class="simple-list" id="fellowship-list"></ul>
-    <h3 class="subhead">Research Proposals Under Review</h3>
-    <ul class="simple-list" id="review-proposal-list"></ul>
-    <h3 class="subhead">Proposals in Preparation</h3>
-    <ul class="simple-list" id="proposal-list"></ul>
   </section>
 
   <section id="publications" aria-labelledby="pubs-h">
     <div class="sec-head">
       <p class="eyebrow"><svg class="gem" aria-hidden="true" style="fill:var(--coral-fill)"><use href="#gem"/></svg>Publications</p>
-      <h2 id="pubs-h">Papers, chapters, and talks</h2>
+      <h2 id="pubs-h">Published and in-press work</h2>
     </div>
     <div class="pub-tools">
       <div id="pub-filters" style="display:flex;flex-wrap:wrap;gap:8px" role="group" aria-label="Filter by type"></div>
@@ -326,25 +329,8 @@ const fellowships = [
   {title:"Doctoral Fellow, Priority Wastes and Integrated Waste Management for the Aluminum Manufacturing Sector", years:"2013–2015",
    d:"TÜBİTAK 1001. Multi-criteria models to prioritize industrial wastes and support waste management decisions."},
 ];
-const reviewProposals = [
-  {title:"Co-PI, Real-Time Physics-Informed Machine Learning and Computer Vision for Accelerating Electronics Thermal Design", years:"Under review",
-   d:"National Science Foundation. Proposed research integrating physics-informed machine learning and computer vision to accelerate electronics thermal design."},
-  {title:"Co-PI / ULL Site PI, AIDatasets:Planning: CHF-Atlas — Toward an AI-Enriched, Physics-Based Atlas of Pool Boiling Data for Reliable Chip Cooling", years:"Pending · Submitted October 2026",
-   d:"National Science Foundation, NSF 26-512 (AI Datasets), Planning Proposal. Lead institution: Auburn University (PI: M. Arik). Co-PIs: C. Basaran (University at Buffalo), M. Ozmen and S. Aygun (University of Louisiana at Lafayette). Requested ULL subaward: $50,024."},
-  {title:"PI, REACH: Reflective Engineering Agentic AI Checkpoints — A Human-Centered Agentic AI for Reflective Engineering Decisions", years:"Submitted / Under review",
-   d:"Co-PI: S. Cilesiz. Louisiana Board of Regents Support Fund (BoRSF), Departmental Enhancement (Targeted). Requested: $80,391. Proposed project period: June 2027–June 2028."},
-];
-const proposals = [
-  {title:"PI, Physics- and Student-Informed LLM for Heat Transfer Education", years:"In preparation · Planned submission January 2027",
-   d:"National Science Foundation, IUSE: EDU, Engaged Student Learning, Level 1. Co-PI: M. Arik, Auburn University. Proposed research combining physics-based simulations, student understanding, and LLM-guided learning to strengthen conceptual understanding in heat transfer education. Requested: $200,000. Proposed duration: 2 years."},
-];
-
-// type: review | accepted | intl | natl | chapter | conf
+// type: accepted (in press) | intl | natl | chapter | conf
 const pubs = [
-  {type:"review", y:"", a:"Özmen, M.", t:"Early warning signals of task failure in multi-agent LLM systems", v:"IEEE Transactions on Emerging Topics in Computational Intelligence"},
-  {type:"review", y:"", a:"Üge, M. A., & Özmen, M.", t:"Spatio-temporal earthquake damage prediction with GNSS: A causal and explainable AI approach", v:"GPS Solutions"},
-  {type:"review", y:"", a:"Eraslan Çelik, M., Soylu, B., & Özmen, M.", t:"A predict-then-optimize approach for flood shelter allocation using building damage-level predictions", v:"Hydrological Sciences Journal"},
-  {type:"review", y:"", a:"Uludag, I., Smith, A. E., & Ozmen, M.", t:"The space allocation problem for temporary displays for a single promotional period in supermarkets", v:"INFORMS Journal on Applied Analytics"},
   {type:"accepted", y:"", a:"Naji, K., Özmen, M., & Arik, M.", t:"Towards a physics-guided and GAN-augmented machine learning framework for predicting synthetic jet heat transfer", v:"Journal of Thermal Science and Engineering Applications", x:"Preprint: SSRN 5748806"},
   {type:"intl", y:"2025", a:"Gedik, Y., Özcan, O., Özmen, M., Özcan, O., & Akay, S. S.", t:"Assessment of building damage from the 2020 Sivrice earthquake using a satellite-based rapid seismic screening method", v:"Scientific Reports", x:"15(1), 37277"},
   {type:"intl", y:"2025", a:"Celik, M. E., Özmen, M., & Sahin, O.", t:"Predicting earthquake damage using a PAR-CGA: Parallel cost-sensitive genetic algorithm-based rule classifier", v:"Computational Geosciences", x:"29(6), 1–23"},
@@ -374,7 +360,7 @@ const pubs = [
   {type:"conf", y:"2015", a:"Özmen, M., Kızılkaya Aydoğan, E., & Zaralı, F.", t:"A multi-criteria decision-making approach for logistics center location selection using SMAA-TODIM", v:"23rd International Conference on Multiple Criteria Decision Making (MCDM 2015), Hamburg, Germany"},
   {type:"conf", y:"2014", a:"Kızılkaya Aydoğan, E., Ateş, N., Uzal, N., & Özmen, M.", t:"Determining the priority waste in aluminum manufacturing sector using the SMAA-2 method", v:"Joint International Symposium on CIE44 and IMSS'14, Istanbul, Türkiye"},
 ];
-const TYPES = [["all","All"],["review","Under review"],["accepted","Accepted"],["intl","Journal articles"],["natl","Journals in Türkiye"],["chapter","Book chapters"],["conf","Conference papers"]];
+const TYPES = [["all","All"],["accepted","Accepted"],["intl","Journal articles"],["natl","Journals in Türkiye"],["chapter","Book chapters"],["conf","Conference papers"]];
 
 const students = [
   {who:"Dontray Noel", deg:"M.S. (non-thesis)", t:"Requirements-Driven Simulation and Verification of a Robotic Sorting Arm in MATLAB/Simulink", y:"In progress · expected Fall 2026"},
@@ -387,7 +373,7 @@ const students = [
 
 const timeline = [
   {when:"2025–present", what:"Instructor, Engineering and Technology Management", org:"University of Louisiana at Lafayette",
-   b:["Teaches engineering economics, project management, production planning and control, and data analysis; designs semester-long industry projects","Contributes to proposal development, including an NSF proposal in preparation; supervises M.S. projects and serves on thesis committees"]},
+   b:["Teaches engineering economics, project management, production planning and control, and data analysis; designs semester-long industry projects","Contributes to proposal development, including interdisciplinary research collaborations; supervises M.S. projects and serves on thesis committees"]},
   {when:"2024–2025", what:"Visiting Research Scholar (TÜBİTAK 2219 Postdoctoral Fellow)", org:"Industrial and Systems Engineering, Auburn University",
    b:["Developed a GPU-accelerated drone resupply heuristic for last-mile distribution in disaster relief","Taught Engineering Economy"]},
   {when:"2020–2025", what:"Associate Professor, Industrial Engineering", org:"Erciyes University, Türkiye",
@@ -412,8 +398,6 @@ document.getElementById("project-list").innerHTML = projects.map(p => `
 
 const listItems = arr => arr.map(f => `<li><span>${esc(f.title)}</span><span class="mono">${esc(f.years)}</span>${f.d ? `<span class="d">${esc(f.d)}</span>` : ""}</li>`).join("");
 document.getElementById("fellowship-list").innerHTML = listItems(fellowships);
-document.getElementById("review-proposal-list").innerHTML = listItems(reviewProposals);
-document.getElementById("proposal-list").innerHTML = listItems(proposals);
 
 document.getElementById("student-list").innerHTML = students.map(s =>
   `<li><span><b>${esc(s.who)}</b> · ${esc(s.deg)}</span><span class="mono">${esc(s.y)}</span><span class="d">${esc(s.t)}</span></li>`).join("");
@@ -432,7 +416,7 @@ const listEl = document.getElementById("pub-list");
 const count = k => k === "all" ? pubs.length : pubs.filter(p => p.type === k).length;
 filtersEl.innerHTML = TYPES.map(([k, l]) => `<button type="button" class="chip" id="f-${k}" data-k="${k}" aria-pressed="${k === active}">${l}<span class="n">${count(k)}</span></button>`).join("");
 const highlight = a => esc(a).replace(/(Özmen, M\.|Ozmen, M\.)/g, "<b>$1</b>");
-const label = {review:"Under review", accepted:"Accepted"};
+const label = {accepted:"In press"};
 function renderPubs(){
   const q = searchEl.value.trim().toLowerCase();
   const rows = pubs.filter(p => (active === "all" || p.type === active) &&
